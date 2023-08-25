@@ -56,16 +56,6 @@ https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-m
 
 ## Security Considerations
 
-I plan to work on these over the coming months.
-
-### Access Token Secrets (auth-server-nodejs/src/tokenSecrets.ts)
-
-This should be removed and the respective variables placed into a .env file, not tracked by git.
-
-### Database Username and Password (postgres/database.env)
-
-This should be changed to a example.env, left for the user to create their own .env file not tracked by git.
-
 ### User passwords for authentication
 
 I am using bcrypt for hashing and salting passwords. Use at your own risk (and be really hesitant to use this system for storing OTHER PEOPLE's data!)
