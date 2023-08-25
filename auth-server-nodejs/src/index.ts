@@ -1,7 +1,9 @@
 import express, { request } from "express";
 import cookieParser from "cookie-parser";
 import { sign, verify } from "jsonwebtoken";
-import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "./tokenSecrets";
+
+const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET
+const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET
 
 // apollo-client is expecting a browser
 import "cross-fetch/polyfill";
